@@ -1,40 +1,59 @@
 body {
     font-family: serif;
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    border: 5px solid red;
-    text-align: center; */
-}
-b {
-    font-weight: bolder;
 }
 h1 {
-    text-align: center; 
     font-size: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-weight: bolder;
     color: forestgreen;
     margin: 4%;
 }
 h2 {
-    text-align: left;
     font-size: 30px;
+    text-align: left;
+    letter-spacing: 2px;
     color: forestgreen;
     margin: 3%;
+    margin-bottom: 40px;
+}
+h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin-bottom: 30px;
 }
 a {
     color: black;
     text-decoration: none;
 }
-
-
-
-#topo {
+b {
+    font-weight: bold;
+    color: forestgreen;
+}
+i {
+    font-style: italic;
+}
+p {
+    margin-bottom: 20px;
+    word-spacing: 2px;
+}
+header {
     margin: 2%;
     width: 940px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    /* border: 5px solid red; */
+}
+footer {
+    margin: 4% 2% 1% 2%;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 
@@ -42,9 +61,10 @@ a {
 #menu-superior ul li {
     padding: 20px;
     font-size: 20px;
-    /* letter-spacing: 1px; */
+    font-weight: bold;
     display: inline;
 }
+
 #pag-atual {
     color: forestgreen;
     text-decoration: underline;
@@ -52,17 +72,21 @@ a {
 
 
 
-#logo-area {
+#area-logo {
     background-image: url(../img/overlay.png), url(../img/logoBackgroundAlt.jpg);
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
-    text-align: center; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 #logo-index {
     padding: 8%;
     height: 180px;
 }
+
 #logo {
     padding: 3%;
     height: 180px;
@@ -71,22 +95,29 @@ a {
 
 
 #conteudo-esquerdo {
-    /* border: 5px solid blue; */
     width: 460px;
-    height: 460px;
+    height: 360px;
     padding: 7px;
-    vertical-align: middle;
+    vertical-align: top;
+    /* border: 5px solid red; */
 }
-#conteudo-esquerdo iframe {
-    width: 100%;
-    height: 70%;
-}
+
+    #conteudo-esquerdo iframe {
+        width: 100%;
+        height: 75%;
+    }
+
 #conteudo-direito {
-    /* border: 5px solid blue; */
     width: 460px;
-    height: 460px;
+    height: 360px;
     padding: 7px;
-    vertical-align: middle;
+    vertical-align: top;
+    /* border: 5px solid red; */
+}
+
+#galeria {
+    width: 100%;
+    height: 300px;
 }
 
 
@@ -95,17 +126,46 @@ a {
     width: 940px;
     margin-left: auto;
     margin-right: auto;
-    /* border: 5px solid red; */
 }
+
 #cor-secao {
-    background-color: oldlace;
+    background-color: white;
+    padding-top: 7px;
 }
-#secao-2 {
+
+#secao-mapa {
     width: 940px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+
+    #secao-mapa iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+
+
+#area-participe {
+    background-image: url(../img/overlay.png), url(../img/areaParticipe.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+}
+
+    #area-participe h1 {
+        color: white;
+        padding: 2%;
+        margin: 2%;
+    }
+
+#bloco {
+    background-image: url(../img/overlayGreen.png);
+    width: 90%;
+    height: 75%;
+    padding: 20px;
     /* border: 5px solid red; */
-    /* background-color: lightgray; */
 }
 
 #contatoForm{
@@ -114,5 +174,18 @@ a {
     margin-right: auto;
     justify-content: center;
 }
+    #bloco h2 {
+        color: white;
+        /* border: 5px solid red; */
+    }
 
+    #bloco h3 {
+        color: white;
+        /* border: 5px solid red; */
+    }
 
+    #bloco p {
+        color: white;
+        margin-bottom: 5px;
+        /* border: 5px solid red; */
+    }
