@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="css/estiloIndex.css">
     </head>
     <body>
-
         <header id="topo">
             <nav id="menu-superior">
                 <ul>
@@ -23,12 +22,26 @@
         </header>
 
         <section id="logo-area">
-            <img id="logo" src="img/logo.png" alt="Logo do Projeto Verdemente">
+             <img id="logo" src="img/logo.png" alt="Logo do Projeto Verdemente">
         </section>
 
-        
-        
-       
-    
+        <section id= "contatoForm">
+            <style>
+                body{font-family: Arial, helvetica, sans-serif}
+                .contato{width: 100%; max-width: 500px; justify-content: center;}
+                .form{display: flex; flex-direction: column}
+                .field{padding: 10px; margin-bottom: 15px; border: 1px solid #DDD;border-radius: 5px;font-family: Arial, helvetica, sans-serif;font-size: 15px}
+                textarea{height: 150px}
+            </style>
+            <div class="contato">
+                <br /><h3><b>Formulario de Contato </b></h3></br>
+                <form class="form" method="post" ACTION="./email.php">
+                    <input class="field" name="name" placeholder="Nome">
+                    <input class="field" name="email" placeholder="E-Mail">
+                    <textarea class="field" name="mensage" placeholder="Digite sua mensagem"> </textarea>
+                    <input type="submit" value="Enviar"></br>
+                </form>
+            </div>
+        </section>
     </body>
 </html>
