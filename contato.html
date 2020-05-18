@@ -6,11 +6,11 @@
         <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
         <meta charset="utf-8">
-        <!-- PRA QUE? <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/estiloIndex.css">
+        <link rel="stylesheet" href="css/estilos.css">
     </head>
     <body>
+
         <header id="topo">
             <nav id="menu-superior">
                 <ul>
@@ -21,34 +21,36 @@
             </nav>
         </header>
 
-        <section id="logo-area">
+        <div id="area-logo">
              <img id="logo" src="img/logo.png" alt="Logo do Projeto Verdemente">
+        </div>
+
+        <section id="secao-info">
+            <h2>Contato</h2>
+            <table>
+                <tr>
+                    <td id="conteudo">
+                        <h3>Atendemos presencialmente no endereço:</h3>
+                        <p>Av. Comendador Enzo Ferrari, 280 - V JOAQUIM INÁCIO, Campinas - SP, 13045-902</p>
+                        <br>
+                        <h3>Telefones:</h3>
+                        <p>(19) 3776-4014</p>
+                        <p>(19) 3776-4056</p>
+                    </td>
+                    <td id="conteudo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.367386686519!2d-47.03903404842347!3d-22.92640969174241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cee74d072b6b%3A0xdad681c77288b22!2sUNIP%20CAMPINAS%20II!5e0!3m2!1spt-BR!2sbr!4v1589722734682!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </td>
+                </tr>
+            </table>
+            <h2>Envie-nos sua mensagem</h2>
+            <form method="post" ACTION="./respostaContato.html">
+                <input name="name" placeholder="Nome">
+                <input name="email" placeholder="E-Mail">
+                <textarea name="mensage" placeholder="Digite sua mensagem"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
         </section>
 
-        <section id= "contatoForm">
-            <style>
-                body{font-family: Arial, helvetica, sans-serif}
-                .contato{width: 100%; max-width: 500px; justify-content: center;}
-                .form{display: flex; flex-direction: column}
-                .field{padding: 10px; margin-bottom: 15px; border: 1px solid #DDD;border-radius: 5px;font-family: Arial, helvetica, sans-serif;font-size: 15px}
-                textarea{height: 150px}
-            </style>
-            <div class="contato">
-                <br /><h3><b>Formulario de Contato </b></h3></br>
-                <form class="form" method="post" ACTION="./respostaContato.html">
-                <input class="field" name="name" placeholder="Nome">
-                    <input class="field" name="email" placeholder="E-Mail">
-                    <textarea class="field" name="mensage" placeholder="Digite sua mensagem"> </textarea>
-                    <input type="submit" value="Enviar"></br>
-                </form>
-            </div>
-        </section>
-
-        <section id="area-logo">
-            <img id="logo" src="img/logo.png" alt="Logo do Projeto Verdemente">
-        </section>
-
-        
         <footer>
             <img src="img/favicon-32x32.png" alt="Icone no rodape">
             &copy; UNIP, "APS", 2020. Alunos Caio Neres e Leonardo Durães, Turma SI8P12.
