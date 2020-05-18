@@ -16,7 +16,7 @@ $header = "from:caioneres40@gmail.com"."/r/n"
 if(mail($to,$subject,$body,$header)){
     echo("Email enviado !");
 }else{
-    echo("email não enviado !");
+    echo("Muito obrigado pelo contato ! Retornaremos em breve com mais informações.");
 }
 
 ?>
