@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Resposta - Projeto Verdemente</title>
+        <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="menu-superior">
+                <ul>
+                    <li><a href="index.html">PÁGINA INICIAL</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a class="pag-atual" href="pedidos.html">PEDIDOS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="area-logo">
+            <img class="logo" src="img/logo.png" alt="Logo do Projeto Verdemente">
+        </div>
+
+        <section class="secao">
+            <h2>Envio via Correios</h2>
+            <p>Enviamos as sementes, <b>devidamente embaladas</b>, por correio. Sendo este um projeto sem fins lucrativos, você paga apenas pela taxa de <b>frete</b>.</p>
+            <p>Você estará recebendo um pacote com espécies sortidas e as informações de como cultivá-las. As sementes também podem ser retiradas de forma <b>gratuita</b> em nossa sede, em maior variedade.</p>
+            <br />
+            <input id="cep" name="cep" type="text" placeholder="Seu CEP (apenas números)" required name="cep">
+            <input type="submit" value="Calcular" onclick="calculo();">
+            <br />
+            <div id="retorno" class="retorno"></div>
+        </section>
+
+        <footer>
+            <img src="img/favicon-32x32.png" alt="Icone no rodape">
+            &copy; UNIP, "APS", 2020. Alunos Caio Neres e Leonardo Durães, Turma SI8P12.
+        </footer>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <!-- JavaScript-->
+        <script>
+            function calculo(){
+                var cep = $("#cep").val();
+                $.post('calculaFrete.php',{cep:cep},function(data){
+                $("#retorno").html(data);
+                });
+            }
+        </script>
+
+    </body>
+</html>
